@@ -1,17 +1,19 @@
 header {
+  font-family: "Playfair Display", serif;
   display: flex;
-  font-weight: 700;
   height: 100px;
   width: 100%;
   background-color: white;
   justify-content: space-around;
   align-items: center;
+  font-weight: 700;
+  font-size: 24px;
 }
 
-.image,
-.linksHeader,
-.button-container {
-  width: 33%;
+button {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .ingresoUsuario ul li {
@@ -25,7 +27,7 @@ header {
 .ingresoUsuario button {
   margin: 15px;
   height: 40px;
-  width: 140px;
+  width: 180px;
   background-color: #487c00;
   border: none;
   border-radius: 5px;
