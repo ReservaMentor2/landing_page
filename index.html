@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <script type="module">
   var prod = true;
-  if(prod) {
-    document.head.innerHTML += '<link rel="stylesheet" href="css/styles.component.css">';
-  }  
+  if (prod) {
+    document.head.innerHTML +=
+      '<link rel="stylesheet" href="css/styles.component.css">';
+  }
 </script>
 
 <html lang="en">
@@ -60,25 +61,36 @@
     </section>
     <section>
       <div class="topMentores">
-        <div class="mentor">
-        <img src="./assets/Andikan.png" alt="AndikanMentor" />
-        <div class="information">
-          <span class="mentorName">Andikan Bassey</span>
-          <span class="job">Cloud Engineer</span>
-          <span class="stars">4.8 Estrellas</span>
-          <span class="amounStudents">500 estudiantes apoyados</span>
-          <span class="price">50 soles por hora</span>
-        </div>
-      </div>
-        <div class="mentor">
-          <img src="./assets/Parklins.png" alt="ParklinsMentor" />
-          <div class="information">
-            <span class="mentorName">Parklins Obi</span>
-            <span class="job">Ing. Software</span>
-            <span class="stars">4.9 Estrellas </span>
-            <span class="amounStudents">300 estudiantes apoyados</span>
-            <span class="price">40 soles por hora</span>
-        </div>
+        <div class="mentores">
+          <span class="topMentoresText">Top Mentores</span>
+          <div class="mentor">
+            <img
+              class="imgMentor"
+              src="./assets/Andikan.png"
+              alt="AndikanMentor"
+            />
+            <div class="information">
+              <span class="mentorName">Andikan Bassey</span>
+              <span class="job">Cloud Engineer</span>
+              <span class="stars">4.8 Estrellas</span>
+              <span class="amounStudents">500 estudiantes apoyados</span>
+              <span class="price">50 soles por hora</span>
+            </div>
+          </div>
+          <div class="mentor">
+            <img
+              class="imgMentor"
+              src="./assets/Parklins.png"
+              alt="ParklinsMentor"
+            />
+            <div class="information">
+              <span class="mentorName">Parklins Obi</span>
+              <span class="job">Ing. Software</span>
+              <span class="stars">4.9 Estrellas </span>
+              <span class="amounStudents">300 estudiantes apoyados</span>
+              <span class="price">40 soles por hora</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>

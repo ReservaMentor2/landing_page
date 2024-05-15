@@ -1,5 +1,7 @@
 body {
   margin: 0px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
 }
 header {
   font-family: "Playfair Display", serif;
@@ -96,13 +98,37 @@ button {
 }
 
 .topMentores {
+  display: block;
+  width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin: 169px 0px;
 }
+
+.mentores {
+  display: flex;
+  height: 1410px;
+  position: relative;
+  width: 50%;
+}
+
+.topMentoresText {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .mentor {
   display: flex;
   flex-direction: column;
 }
+
+.imgMentor {
+  width: 400px;
+}
+
 .information span {
   display: block;
 }
