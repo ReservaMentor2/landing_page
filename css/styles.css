@@ -82,6 +82,7 @@ button {
   border-radius: 50px;
 }
 .searchBar button {
+  border: none;
   border-radius: 25px;
   height: 60%;
   width: 23%;
