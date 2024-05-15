@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<script type="module">
+  var prod = true;
+  if(prod) {
+    document.head.innerHTML += '<link rel="stylesheet" href="css/styles.component.css">';
+  }  
+</script>
+
 <html lang="en">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -10,7 +17,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ReservaMentor</title>
-    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
@@ -49,4 +55,36 @@
       </div>
     </section>
   </body>
+</html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReservaMentor</title>
+</head>
+
+<body>
+  <header>
+    <div class="image">Reserva <span class="highlight">Mentor</span></div>
+    <div class="linksHeader">
+      <ul>
+        <li>Acerca de</li>
+        <li>Caracteristicas</li>
+        <li>Top Mentores</li>
+        <li>Testimonios</li>
+      </ul>
+    </div>
+    <div class="ingresoUsuario">
+      <ul>
+        <li><button onclick="location.href='../login'">Iniciar sesion</button></li>
+        <li><button onclick="location.href='../register'">Registrate</button></li>
+      </ul>
+    </div>
+  </header>
+</body>
+
 </html>
