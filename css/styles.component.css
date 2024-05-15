@@ -51,6 +51,8 @@ button {
   justify-content: center;
   align-items: center;
   margin-top: 169px;
+  width: 100%;
+  height: 743;
 }
 
 .introDetails {
@@ -107,17 +109,22 @@ button {
   margin: 169px 0px;
 }
 
-.mentores {
+.mentoresDisplay {
   display: flex;
-  height: 1410px;
-  position: relative;
-  width: 50%;
+  height: 836px;
+  width: 1410px;
+  flex-direction: column;
 }
 
 .topMentoresText {
-  position: absolute;
-  top: 0;
-  left: 0;
+  font-size: 45px;
+
+  margin-bottom: 80px;
+}
+
+.mentores {
+  display: flex;
+  justify-content: space-around;
 }
 
 .mentor {
@@ -127,10 +134,12 @@ button {
 
 .imgMentor {
   width: 400px;
+  height: 360px;
 }
 
 .information span {
   display: block;
+  font-size: 40px;
 }
 
 .job {
