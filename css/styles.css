@@ -1,3 +1,6 @@
+body {
+  margin: 0px;
+}
 header {
   font-family: "Playfair Display", serif;
   display: flex;
@@ -38,4 +41,55 @@ button {
 .linksHeader ul li {
   display: inline-block;
   margin-right: 20px;
+}
+
+.intro {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 169px;
+}
+
+.introDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 540px;
+  width: 1088px;
+}
+
+.mensajeGrande {
+  font-size: 96px;
+  font-weight: 700;
+}
+
+.mensajeChico {
+  margin: 40px 0px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.searchBar {
+  height: 368px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: #aac38b;
+  border-radius: 50px;
+}
+.searchBar button {
+  border-radius: 25px;
+  height: 60%;
+  width: 23%;
+  font-size: 24px;
+  background-color: white;
+}
+
+.searchBar .search {
+  background-color: #487c00;
+  color: white;
 }
