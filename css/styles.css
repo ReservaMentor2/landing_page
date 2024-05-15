@@ -94,3 +94,19 @@ button {
   background-color: #487c00;
   color: white;
 }
+
+.topMentores {
+  display: flex;
+  margin: 169px 0px;
+}
+.mentor {
+  display: flex;
+  flex-direction: column;
+}
+.information span {
+  display: block;
+}
+
+.job {
+  color: #487c00;
+}
