@@ -145,3 +145,63 @@ button {
 .job {
   color: #487c00;
 }
+
+.caracteristicas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.forStudents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+}
+
+.carDerecha,
+.carIzquierda {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.carIzquierda div:first-child
+ {
+  width: 20%;
+  align-items: flex-start;
+}
+
+.carDerecha div:first-child
+ {
+  width: 20%;
+  align-items: flex-start;
+}
+
+.carDerecha {
+  align-items: flex-end;
+}
+
+.carDerecha span:first-child,
+.carIzquierda span:first-child {
+  font-size: 36px;
+}
+
+.carDerecha p:first-child,
+.carIzquierda p:first-child {
+  font-size: 24px;
+}
+
+.caracteristicas span {
+  font-size: 45px;
+}
+.forStudents > span {
+  font-size: 36px;
+  justify-content: center;
+}
+
+.imgCar {
+  width: 15%;
+  height: 15%;
+}
