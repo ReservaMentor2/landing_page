@@ -1,207 +1,319 @@
 body {
-  margin: 0px;
-  font-weight: 700;
-  font-family: "Playfair Display", serif;
+    margin: 0px;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
 }
+
 header {
-  font-family: "Playfair Display", serif;
-  display: flex;
-  height: 100px;
-  width: 100%;
-  background-color: white;
-  justify-content: space-around;
-  align-items: center;
-  font-weight: 700;
-  font-size: 24px;
+    font-family: "Playfair Display", serif;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 700;
+    font-size: 24px;
 }
 
 button {
-  font-family: "Playfair Display", serif;
-  font-size: 24px;
-  font-weight: 700;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .ingresoUsuario ul li {
-  display: inline-block;
+    display: inline-block;
 }
 
 .highlight {
-  color: #487c00;
+    color: #487c00;
 }
 
 .ingresoUsuario button {
-  margin: 15px;
-  height: 40px;
-  width: 180px;
-  background-color: #487c00;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  color: white;
+    margin: 15px;
+    height: 40px;
+    width: 180px;
+    background-color: #487c00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
 }
 
 .linksHeader ul li {
-  display: inline-block;
-  margin-right: 20px;
+    display: inline-block;
+    margin-right: 20px;
 }
 
 .intro {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 169px;
-  width: 100%;
-  height: 743;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 169px;
+    width: 100%;
+    height: 743;
 }
 
 .introDetails {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 540px;
-  width: 1088px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 540px;
+    width: 1088px;
 }
 
 .mensajeGrande {
-  font-size: 96px;
-  font-weight: 700;
+    font-size: 96px;
+    font-weight: 700;
 }
 
 .mensajeChico {
-  margin: 40px 0px;
-  font-size: 24px;
-  font-weight: 700;
+    margin: 40px 0px;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .searchBar {
-  height: 368px;
-  font-weight: 700;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  background-color: #aac38b;
-  border-radius: 50px;
+    height: 368px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #aac38b;
+    border-radius: 50px;
 }
+
 .searchBar button {
-  border: none;
-  border-radius: 25px;
-  height: 60%;
-  width: 23%;
-  font-size: 24px;
-  background-color: white;
+    border: none;
+    border-radius: 25px;
+    height: 60%;
+    width: 23%;
+    font-size: 24px;
+    background-color: white;
 }
 
 .searchBar .search {
-  background-color: #487c00;
-  color: white;
+    background-color: #487c00;
+    color: white;
 }
 
 .topMentores {
-  display: block;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 169px 0px;
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 169px 0px;
 }
 
 .mentoresDisplay {
-  display: flex;
-  height: 836px;
-  width: 1410px;
-  flex-direction: column;
+    display: flex;
+    height: 836px;
+    width: 1410px;
+    flex-direction: column;
 }
 
 .topMentoresText {
-  font-size: 45px;
-
-  margin-bottom: 80px;
+    font-size: 45px;
+    margin-bottom: 80px;
 }
 
 .mentores {
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
 
 .mentor {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .imgMentor {
-  width: 400px;
-  height: 360px;
+    width: 400px;
+    height: 360px;
 }
 
 .information span {
-  display: block;
-  font-size: 40px;
+    display: block;
+    font-size: 40px;
 }
 
 .job {
-  color: #487c00;
+    color: #487c00;
 }
 
 .caracteristicas {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .forStudents {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 60%;
-  height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 100%;
 }
 
 .carDerecha,
 .carIzquierda {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-.carIzquierda div:first-child
- {
-  width: 20%;
-  align-items: flex-start;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
-.carDerecha div:first-child
- {
-  width: 20%;
-  align-items: flex-start;
+.carIzquierda div:first-child {
+    width: 20%;
+    align-items: flex-start;
+}
+
+.carDerecha div:first-child {
+    width: 20%;
+    align-items: flex-start;
 }
 
 .carDerecha {
-  align-items: flex-end;
+    align-items: flex-end;
 }
 
 .carDerecha span:first-child,
 .carIzquierda span:first-child {
-  font-size: 36px;
+    font-size: 36px;
 }
 
 .carDerecha p:first-child,
 .carIzquierda p:first-child {
-  font-size: 24px;
+    font-size: 24px;
 }
 
 .caracteristicas span {
-  font-size: 45px;
+    font-size: 45px;
 }
-.forStudents > span {
-  font-size: 36px;
-  justify-content: center;
+
+.forStudents>span {
+    font-size: 36px;
+    justify-content: center;
 }
 
 .imgCar {
-  width: 15%;
-  height: 15%;
+    width: 15%;
+    height: 15%;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 54, 13, 0.1);
+    border-radius: 8px;
+}
+
+.faq-container h1 {
+    text-align: center;
+    color: #333;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: green;
+}
+
+.faq-item p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.success-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 54, 13, 0.1);
+    border-radius: 8px;
+}
+
+.success-container h1 {
+    text-align: center;
+    color: #333;
+}
+
+.success-item {
+    margin-bottom: 20px;
+}
+
+.success-item h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: green;
+}
+
+.success-item p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.reserva-mentor-container {
+    margin: 0;
+    display: flex;
+    color: whitesmoke;
+    background-color: #00540d;
+}
+
+.reserva-mentor-title {
+    font-size: 64px;
+    padding-left: 15%;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.reserva-mentor-links {
+    padding: 3% 0% 3% 20%;
+}
+
+.reserva-mentor-subtitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.reserva-mentor-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.reserva-mentor-list li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.reserva-mentor-socials .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reserva-mentor-socials .social-icons a {
+    margin: 0 5%;
+    font-size: 4px;
+}
+
+.reserva-mentor-socials .social-icons img {
+    width: 30px;
+    height: 30px;
 }
