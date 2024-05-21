@@ -165,18 +165,20 @@ button {
 .carIzquierda {
   width: 100%;
   display: flex;
-  justify-content: space-around;
-}
-.carIzquierda div:first-child
- {
-  width: 20%;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.carDerecha div:first-child
- {
-  width: 20%;
+.carIzquierda div {
+  width: 50%;
   align-items: flex-start;
+  align-items: center;
+}
+
+.carDerecha div {
+  width: 50%;
+  align-items: flex-start;
+  align-items: center;
 }
 
 .carDerecha {
