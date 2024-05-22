@@ -85,12 +85,13 @@ button {
   align-items: center;
   width: 100%;
   background-color: #aac38b;
-  border-radius: 50px;
+  border-radius: 25px;
+  padding: 20px
 }
 .searchBar button {
   border: none;
   border-radius: 25px;
-  height: 60%;
+  height: 55%;
   width: 23%;
   font-size: 24px;
   background-color: white;
@@ -252,4 +253,13 @@ button {
   align-items: center;
   width: 60%;
   height: 100%;
+}
+
+.frameTexto {
+  border: 1px solid #00540D;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
