@@ -245,3 +245,11 @@ button {
 .descripcion{
   font-size: 24px;
 }
+
+.forMentors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+}

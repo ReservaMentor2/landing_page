@@ -1,14 +1,7 @@
 <!DOCTYPE html>
-<script type="module">
-  var prod = true;
-  if (prod) {
-    document.head.innerHTML +=
-      '<link rel="stylesheet" href="css/styles.component.css">';
-  }
-</script>
-
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="css/styles.component.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -265,8 +258,30 @@
         </div>
       </div>
       <div class="forMentors">
-        <div></div>
+        <span>Para mentores</span>
+        <div class="carIzquierda">
+          <div>
+            <p>Promoción y visibilidad</p>
+            <p>
+              Capacidad de ser destacado en las búsquedas y recomendaciones de la plataforma según las calificaciones y áreas de
+              experiencia.
+            </p>
+          </div>
+          <img class="imgCar" src="./assets/megafono.png" alt="imagenApoyo" />
+        </div>
+        <div class="carDerecha">
+          <img class="imgCar" src="./assets/cuaderno.png" alt="imagenApoyo" />
+          <div>
+            <p>Perfiles detallados</p>
+            <p>
+                Capacidad de crear un perfil completo que destaque sus áreas de experiencia, habilidades, certificaciones y logros.
+                Posibilidad de mostrar calificaciones y reseñas de estudiantes anteriores.            
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   </body>
+
+
 </html>
