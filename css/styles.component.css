@@ -306,36 +306,6 @@ button {
     margin: 0;
 }
 
-.success-container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 54, 13, 0.1);
-    border-radius: 8px;
-}
-
-.success-container h1 {
-    text-align: center;
-    color: #333;
-}
-
-.success-item {
-    margin-bottom: 20px;
-}
-
-.success-item h2 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    color: green;
-}
-
-.success-item p {
-    font-size: 1em;
-    line-height: 1.5;
-    margin: 0;
-}
-
 .gallery-container h1 {
     text-align: center;
     color: #333;
@@ -396,6 +366,115 @@ button {
 #next {
     right: 420px; 
     bottom: 245px;
+}
+
+.success-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 54, 13, 0.1);
+    border-radius: 8px;
+}
+
+.success-container h1 {
+    text-align: center;
+    color: #333;
+}
+
+.success-item {
+    margin-bottom: 20px;
+}
+
+.success-item h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: green;
+}
+
+.success-item p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.form-container {
+    margin-left: 500px;
+    margin-top: 170px
+}
+
+.form-container h1{
+    margin-left: 185px;
+}
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 3px solid #00540D;
+    border-radius: 25px;
+    padding: 20px;
+    max-width: 450px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+
+}
+
+.form-container .form-text {
+    position: relative;
+    margin-left: 600px;
+    bottom: 360px;
+    font-size: 30px;
+    line-height: 10px;
+}
+.form-container .form-item {
+    margin: 7px;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 200%;
+    padding: 20px;
+    padding-top: 25px;
+    border: 1px solid #00540D;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+}
+
+.form-container input{
+    width: 135%;
+}
+
+.form-container textarea{
+    width: 137%;
+}
+
+.form-container input::placeholder,
+.form-container textarea::placeholder {
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    display: flex;
+    font-weight: 700;
+    color: #B3B1B1;
+}
+
+.form-container button {
+    cursor: pointer;
+    background-color: #487c00;
+    color: #ffffff;
+    padding: 9px 20px;
+    font-weight: 700;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    margin-left: 329px;
+}
+
+.form-container button:hover {
+    background-color: #00540D;
 }
 
 .reserva-mentor-container {
