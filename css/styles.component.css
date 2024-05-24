@@ -339,6 +339,7 @@ button {
 .gallery-container h1 {
     text-align: center;
     color: #333;
+    margin-top: 170px
 }
 
 .gallery-container i {
@@ -388,12 +389,12 @@ button {
 }
 
 #prev {
-    left: 290px; 
+    left: 420px; 
     top: 245px;
 }
 
 #next {
-    right: 290px; 
+    right: 420px; 
     bottom: 245px;
 }
 
