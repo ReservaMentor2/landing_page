@@ -336,6 +336,67 @@ button {
     margin: 0;
 }
 
+.gallery-container h1 {
+    text-align: center;
+    color: #333;
+}
+
+.gallery-container i {
+    position: absolute;
+    cursor: pointer;
+    height: 90px;
+    width: 90px;
+    font-size: 5rem;
+    color: #fff;
+    text-align: center;
+    background: #00540D;
+    line-height: 90px;
+    border-radius: 50%;
+}
+
+.gallery-container .gallery-item .image-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.gallery-container .gallery-item .image-list .imgFirst {
+    width: 500px;
+    height: auto;
+    opacity: 0.5; 
+    left: 380px; 
+    transform: translateX(-35%); 
+}
+
+.gallery-container .gallery-item .image-list .imgSec {
+    width: 590px;
+    height: auto;
+}
+
+.gallery-container .gallery-item .image-list .imgThird {
+    width: 500px;
+    height: auto;
+    opacity: 0.5; 
+    right:380px; 
+    transform: translateX(35%); 
+}
+
+.gallery-container .gallery-item {
+    position: relative; 
+}
+
+#prev {
+    left: 290px; 
+    top: 245px;
+}
+
+#next {
+    right: 290px; 
+    bottom: 245px;
+}
+
 .reserva-mentor-container {
     margin: 0;
     display: flex;
