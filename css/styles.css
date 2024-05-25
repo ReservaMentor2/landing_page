@@ -2,18 +2,16 @@
 
 body {
   margin: 0px;
+  padding: 0px;
   font-weight: 700;
   font-family: "Playfair Display", serif;
+  --verdeoscuro: #00540d;
+  --verdenormal: #487c00;
 }
 
-header {
-  display: flex;
-  width: 100%;
-  background-color: white;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 24px;
-  margin: auto 50px;
+a {
+  text-decoration: none;
+  color: black;
 }
 
 button {
@@ -30,29 +28,340 @@ section {
   color: #487c00;
 }
 
-/*SECTIONS*/
+/* 
+ALL NAVBAR 
+*/
 
-/* HEADER */
-
-.linksHeader ul li {
-  display: inline-block;
-  margin-right: 20px;
+.nav > * {
+  background-color: #ffffff;
+  z-index: 100;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  /*CUIDADO CON CAMBIAR ESTA LINEA*/
+  box-sizing: unset;
+  /*CUIDADO CON CAMBIAR ESTA LINEA*/
 }
 
-.ingresoUsuario ul li {
-  display: inline-block;
+/* All NAVBAR */
+
+.navbar > .container-fluid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  justify-content: center;
+  font-family: "Playfair Display";
+  width: auto;
 }
 
-.ingresoUsuario button {
-  margin: 15px;
-  height: 40px;
-  width: 180px;
-  background-color: #487c00;
-  border: none;
-  border-radius: 5px;
+/* Logo de Reserva Mentor */
+
+.navbar-brand {
+  display: flex;
+  grid-column: 2 / span 1;
+  padding: 30px 40px;
+  margin-top: 0px;
+}
+
+/* Boton Toggler (para abrir el menu en movil) */
+
+.navbar-toggler {
+  grid-column: 11 / span 1;
+}
+
+/* Menu que se cierra en movil */
+
+.navbar-collapse {
+  grid-column: 11 / span 1;
+  flex-direction: row-reverse;
+}
+
+/* Cada elemento del Menu */
+
+.navbar-nav .nav-item {
+  font-family: "Abhaya Libre";
+  font-style: normal;
+  font-weight: bold;
+  margin-left: 32px;
+  align-self: center;
+}
+
+.navbar-nav .nav-item-button {
+  font-family: "Abhaya Libre";
+  font-style: normal;
+  font-weight: bold;
+  margin-left: 32px;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+/*  Titulo de la App */
+
+.navbar-brand h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.navbar-brand span {
+  width: 72px;
+  font-size: 20px;
+  font-weight: bold;
+  height: max-content;
+  color: var(--verdenormal);
+}
+
+/* Cada link del Menu */
+
+.navbar-nav .nav-link {
+  color: black;
+  font-size: 14px;
+  border-radius: 12px;
+  margin-right: 1.3rem;
+  padding: 0px 40px;
+  position: relative;
+  font-weight: bold;
+  align-self: center;
+  justify-self: center;
+  width: max-content;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.navbar-nav .nav-link:hover {
+  font-weight: 900;
   cursor: pointer;
-  color: white;
+  color: var(--verdeoscuro);
 }
+
+.navbar-nav .nav-link-button {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: var(--verdenormal);
+  font-size: 12px;
+  border-radius: 12px;
+  margin-right: 1.3rem;
+  padding: 10px 40px;
+  position: relative;
+  font-weight: bold;
+  align-self: center;
+  justify-self: center;
+  width: max-content;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.navbar-nav .nav-link-button:hover {
+  background-color: var(--verdeoscuro);
+  cursor: pointer;
+}
+
+@media (max-width: 2860px) {
+  /* Boton Toggler (para abrir el menu en movil) */
+  .navbar-toggler {
+    font-size: larger;
+  }
+  .navbar-toggler img {
+    width: 40px;
+  }
+  /*All navbar */
+  .navbar > .container-fluid {
+    font-size: large;
+    padding: 15px 3%;
+    max-width: 2560px;
+  }
+  /* Cada elemento del Menu */
+  .navbar-nav .nav-item {
+    margin-left: 32px;
+  }
+  .navbar-nav .nav-item-button {
+    margin-left: 32px;
+  }
+  .navbar-brand img {
+    width: 72px;
+    height: max-content;
+  }
+}
+
+@media (max-width: 1440px) {
+  .navbar-toggler {
+    font-size: large;
+  }
+  .navbar > .container-fluid {
+    font-size: 14px;
+    padding: 15px 1%;
+    max-width: 1440px;
+  }
+  .navbar-nav .nav-item {
+    margin-left: 6px;
+  }
+  .navbar-nav .nav-item-button {
+    margin-left: 6px;
+  }
+  .navbar-brand img {
+    width: 30px;
+    height: max-content;
+  }
+}
+
+@media (max-width: 1061px) {
+  .navbar-toggler {
+    font-size: medium;
+  }
+  .navbar > .container-fluid {
+    font-size: 12px;
+    padding: 10px 5%;
+    max-width: 1061px;
+    justify-content: center;
+  }
+  .navbar-brand {
+    margin-right: 0;
+  }
+  .navbar-nav .nav-link {
+    margin-right: 0;
+  }
+  .navbar-nav .nav-link-button {
+    margin-right: 0;
+  }
+  .navbar-brand img {
+    width: 30px;
+    height: max-content;
+  }
+}
+
+@media (max-width: 1017px) {
+  .navbar-toggler {
+    font-size: medium;
+  }
+  .navbar > .container-fluid {
+    font-size: 12px;
+    padding: 10px 0%;
+    max-width: 1017px;
+    justify-content: center;
+  }
+  .navbar-brand {
+    margin: 0 !important;
+  }
+  .navbar-nav .nav-link {
+    margin-right: 0;
+  }
+  .navbar-nav .nav-link-button {
+    margin-right: 0;
+  }
+  .navbar-brand img {
+    width: 30px;
+    height: max-content;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-toggler {
+    font-size: medium;
+  }
+  .navbar > .container-fluid {
+    font-size: 12px;
+    padding: 10px 0%;
+    max-width: 992px;
+    justify-content: space-evenly;
+  }
+  .navbar-brand {
+    margin: 0 !important;
+  }
+  .navbar-nav .nav-link {
+    margin-right: 0;
+  }
+  .navbar-nav .nav-link-button {
+    margin-right: 0;
+  }
+  .navbar-brand img {
+    width: 30px;
+    height: max-content;
+  }
+}
+
+/*changing the looking of the navbar here with the button menu toggler */
+
+/* aqui abajo se cambia el aspecto del menu al boton toggler*/
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    display: inherit;
+  }
+  /* Este es el menu del navbar */
+  .navbar-collapse ul {
+    grid-column: 11 / span 1;
+    flex-direction: row;
+  }
+  .navbar-nav .nav-item {
+    margin-top: 6px;
+  }
+  .navbar-nav .nav-item-button {
+    margin-top: 6px;
+  }
+  .nav-item .nav-link a {
+    margin-bottom: 12px;
+  }
+  .nav-item-button .nav-link-button a {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    grid-column: span 12;
+    margin: 0;
+  }
+  .navbar > .container-fluid {
+    font-size: 14px;
+    padding: 6px 12px;
+    max-width: 992px;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-link {
+    margin-bottom: 12px;
+  }
+  .nav-link-button {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 660px) {
+  .navbar-toggler img {
+    height: 25px;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 5px;
+  }
+  .navbar > .container-fluid {
+    font-size: 10px;
+    padding: 15px 1%;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 375px) {
+  .navbar > .container-fluid {
+    max-width: 375px;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar > .container-fluid {
+    max-width: 320px;
+  }
+}
+
+/* 
+ALL NAVBAR 
+*/
 
 /*Introduccion*/
 
@@ -75,7 +384,11 @@ section {
 }
 
 .mensajeGrande {
-  font-size: 96px;
+  justify-content: center;
+  justify-self: center;
+  text-align: center;
+  align-self: center;
+  font-size: 76px;
   font-weight: 700;
 }
 
@@ -114,7 +427,7 @@ section {
 
 /*ACERCA DE*/
 
-.acercaDe {
+#acercaDe {
   margin-top: 170px;
   justify-content: center;
   width: 100%;
@@ -145,6 +458,16 @@ section {
   width: 40%;
 }
 
+.integrante img {
+  width: min-content;
+  box-shadow: #00540d;
+  border-radius: 200px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  -ms-border-radius: 200px;
+  -o-border-radius: 200px;
+}
+
 .imgMentor {
   width: 400px;
   height: 360px;
@@ -173,7 +496,7 @@ section {
   margin-bottom: 80px;
 }
 
-.topMentores {
+#topMentores {
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -215,7 +538,7 @@ section {
   color: #487c00;
 }
 
-.Testimonios {
+#Testimonios {
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -248,6 +571,7 @@ section {
 .usuarioName {
   font-size: 35px;
 }
+
 .descripcion {
   font-size: 20px;
 }
@@ -266,7 +590,7 @@ section {
 
 /*CARACTERISTICAS*/
 
-.caracteristicas {
+#caracteristicas {
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -441,6 +765,7 @@ section {
 .form-container h1 {
   margin-left: 185px;
 }
+
 .form-container form {
   display: flex;
   flex-direction: column;
@@ -461,6 +786,7 @@ section {
   font-size: 30px;
   line-height: 10px;
 }
+
 .form-container .form-item {
   margin: 7px;
 }
@@ -521,7 +847,7 @@ section {
 }
 
 .reserva-mentor-title {
-  font-size: 64px;
+  font-size: 4rem;
   padding-left: 15%;
   justify-content: center;
   align-items: center;
@@ -533,19 +859,19 @@ section {
 }
 
 .reserva-mentor-subtitle {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 5%;
 }
 
 .reserva-mentor-list {
   list-style-type: none;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 5%;
 }
 
 .reserva-mentor-list li {
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 1.3rem;
+  margin-bottom: 5%;
 }
 
 .reserva-mentor-socials .social-icons {
@@ -556,10 +882,80 @@ section {
 
 .reserva-mentor-socials .social-icons a {
   margin: 0 5%;
-  font-size: 4px;
+  font-size: 2rem;
 }
 
 .reserva-mentor-socials .social-icons img {
-  width: 30px;
-  height: 30px;
+  width: 2rem;
+  height: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .reserva-mentor-title {
+    font-size: 4rem;
+    padding-left: 10%;
+  }
+}
+
+@media (max-width: 968px) {
+  .reserva-mentor-title {
+    font-size: 3rem;
+    padding-left: 10%;
+  }
+  .reserva-mentor-subtitle {
+    font-size: 1.6rem;
+    margin-bottom: 5%;
+  }
+  .reserva-mentor-list li {
+    font-size: 1.3rem;
+  }
+  .reserva-mentor-socials .social-icons a {
+    margin: 5%;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 868px) {
+  .reserva-mentor-title {
+    font-size: 2rem;
+    padding-left: 10%;
+  }
+  .reserva-mentor-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 5%;
+  }
+  .reserva-mentor-list li {
+    font-size: 1rem;
+  }
+  .reserva-mentor-socials .social-icons a {
+    margin: 3%;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 568px) {
+  .reserva-mentor-container {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: initial;
+  }
+  .reserva-mentor-title {
+    font-size: 2.5rem;
+    padding-left: 10%;
+  }
+  .reserva-mentor-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+  }
+  .reserva-mentor-list li {
+    font-size: 1.2rem;
+  }
+  .reserva-mentor-socials .social-icons a {
+    margin: 3%;
+    font-size: 3rem;
+  }
+  .reserva-mentor-socials .social-icons img {
+    width: 3rem;
+    height: 3rem;
+  }
 }

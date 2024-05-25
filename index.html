@@ -1,555 +1,430 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <title>ReservaMentor</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
-  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</head>
 
-  <body>
-    <header>
-      <div>
-        <p>Reserva<span class="marcaHighlight">Mentor</span></p>
-      </div>
-      <div class="linksHeader">
-        <ul>
-          <li>Acerca de</li>
-          <li>Caracteristicas</li>
-          <li>Top Mentores</li>
-          <li>Testimonios</li>
-        </ul>
-      </div>
-      <div class="ingresoUsuario">
-        <ul>
-          <li>
-            <button>Iniciar sesion</button>
-          </li>
-          <li>
-            <button>Registrate</button>
-          </li>
-        </ul>
-      </div>
-    </header>
+<body>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <!-- ALL NAVBAR-->
+        <div class="container-fluid">
 
-    <section class="introduccion">
-      <div class="introduccionDetails">
-        <div class="mensajeGrande">
-          Encuentra a tu mentor y resuelve tus dudas
+            <!-- navbar brand (Reserva Mentor)-->
+            <a class="navbar-brand" href="#">
+                <h1>Reserva <span class="marcaHighlight">Mentor</span></h1>
+            </a>
+
+            <!-- button Toggler (para hacer aparecer el menu en movil)-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+      <img src="./assets/bars.png" alt="bars">
+
+    </button>
+            <!-- Menu del navbar -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav">
+
+                    <!-- El elemento del menu -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#acercaDe">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#caracteristicas">Caracteristicas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#topMentores">Top Mentores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Testimonios">Testimonios</a>
+                    </li>
+                    <li class="nav-item-button">
+                        <a class="nav-link-button" href="">Iniciar Sesion</a>
+                    </li>
+
+                    <li class="nav-item-button">
+                        <a class="nav-link-button" href="">Registrate</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
         </div>
-        <div class="mensajeChico">
-          Descubre increibles mentores a un precio comodo
+
+    </nav>
+
+    <!-- <section class="introduccion">
+        <div class="introduccionDetails">
+            <div class="mensajeGrande">
+                Encuentra a tu mentor y resuelve tus dudas
+            </div>
+            <div class="mensajeChico">
+                Descubre increibles mentores a un precio comodo
+            </div>
+            <div class="searchBar">
+                <button>Ingresa tu problema</button>
+                <button>Disponibilidad</button>
+                <button>Estudiantes</button>
+                <button class="search">Buscar</button>
+            </div>
         </div>
-        <div class="searchBar">
-          <button>Ingresa tu problema</button>
-          <button>Disponibilidad</button>
-          <button>Estudiantes</button>
-          <button class="search">Buscar</button>
-        </div>
-      </div>
     </section>
 
-    <section class="acercaDe">
-      <div class="acercaDeBox">
-        <div class="nosotros">
-          <span
-            >Acerca de Reserva<span class="marcaHighlight">Mentor</span></span
-          >
-          <p>
-            En ReservaMentor, creemos en el poder transformador de la educación
-            y en el apoyo entre compañeros como una herramienta fundamental para
-            el éxito académico. Fundada por un grupo de estudiantes
-            universitarios apasionados por ayudar a sus compañeros,
-            ReservaMentor es una plataforma en línea que conecta a estudiantes
-            que necesitan ayuda con mentores estudiantes experimentados y
-            cualificados.
-          </p>
+    <section id="acercaDe">
+        <div class="acercaDeBox">
+            <div class="nosotros">
+                <span>Acerca de Reserva<span class="marcaHighlight">Mentor</span></span>
+                <p>
+                    En ReservaMentor, creemos en el poder transformador de la educación y en el apoyo entre compañeros como una herramienta fundamental para el éxito académico. Fundada por un grupo de estudiantes universitarios apasionados por ayudar a sus compañeros, ReservaMentor
+                    es una plataforma en línea que conecta a estudiantes que necesitan ayuda con mentores estudiantes experimentados y cualificados.
+                </p>
+            </div>
+            <div class="integrantes">
+                <div class="integrante">
+                    <img class="imgMentor" src="./assets/giorgio.jpg" alt="Giorgio" />
+                    <div class="information">
+                        <span class="mentorName">Giorgio Mancusi</span>
+                        <span class="job">Co-fundador y CEO</span>
+                    </div>
+                    <p class="descripcion">
+                        Giorgio es un visionario cuya pasión por la educación y el emprendimiento lo llevó a co-fundar ReservaMentor. Desde una edad temprana, reconoció las brechas en el acceso a recursos de aprendizaje de calidad y se propuso encontrar una solución. Con una
+                        mentalidad disruptiva y un enfoque innovador, Giorgio ha liderado a ReservaMentor para revolucionar la forma en que los estudiantes acceden a la tutoría en línea.
+                    </p>
+                </div>
+                <div class="integrante">
+                    <img class="imgMentor" src="./assets/mathias.jpg" alt="Mathias" />
+                    <div class="information">
+                        <span class="mentorName">Mathias Hualtibamba</span>
+                        <span class="job">Co-fundador y CEO</span>
+                    </div>
+                    <p class="descripcion">
+                        Mathias es la mente brillante detrás de algunas de las innovaciones más disruptivas de ReservaMentor. Su inagotable curiosidad y pensamiento fuera de la caja lo convierten en un catalizador de ideas revolucionarias que desafían el statu quo de la educación
+                        en línea. Mathias tiene la capacidad única de anticipar las tendencias antes de que sucedan. Su visión vanguardista ha impulsado a ReservaMentor a desarrollar características y funcionalidades que han redefinido por completo la
+                        experiencia de tutoría virtual.
+                    </p>
+                </div>
+                <div class="integrante">
+                    <img class="imgMentor" src="./assets/ibrahim.png" alt="Ibrahim" />
+                    <div class="information">
+                        <span class="mentorName">Ibrahim Arquiñigo</span>
+                        <span class="job">Director de UX</span>
+                    </div>
+                    <p class="descripcion">
+                        Ibrahim es un estudiante apasionado por la educación y el emprendimiento. Tras enfrentar desafíos en su propio proceso de aprendizaje, se dio cuenta de la importancia de contar con recursos de tutoría accesibles. Esta experiencia lo inspiró a trabajar
+                        en la start up ReservaMentor, con la visión de crear una plataforma que brinde a los estudiantes acceso a mentores excepcionales en línea. Su liderazgo y determinación impulsan al equipo a seguir innovando y mejorando la experiencia
+                        de tutoría en línea.
+                    </p>
+                </div>
+                <div class="integrante">
+                    <img class="imgMentor" src="./assets/fabio.jpg" alt="Fabio" />
+                    <div class="information">
+                        <span class="mentorName">Fabio Osorio</span>
+                        <span class="job">Director de Tech</span>
+                    </div>
+                    <p class="descripcion">
+                        Fabio es el genio tecnológico que impulsa la infraestructura digital de vanguardia que sustenta a ReservaMentor. Con una mente brillante y una pasión inquebrantable por la innovación, él es el arquitecto detrás de las soluciones técnicas disruptivas que
+                        están redefiniendo la experiencia de tutoría en línea. Su profundo conocimiento de las últimas tendencias y tecnologías en el espacio edtech, combinado con su enfoque visionario, le permiten anticipar y dar forma al futuro del
+                        aprendizaje virtual. Fabio tiene un talento innato para traducir ideas audaces en realidades técnicas deslumbrantes.
+                    </p>
+                </div>
+                <div class="integrante">
+                    <img class="imgMentor" src="./assets/nathaly.png" alt="Nathaly" />
+                    <div class="information">
+                        <span class="mentorName">Nathaly Anaya</span>
+                        <span class="job">CEO - Directora ejecutiva</span>
+                    </div>
+                    <p class="descripcion">
+                        Nathaly es la fuerza motriz detrás del imparable impulso de ReservaMentor hacia la excelencia. Como co-fundadora y directora ejecutiva, su liderazgo visionario e inquebrantable determinación han sido fundamentales para convertir una idea audaz en una
+                        empresa líder en el espacio edtech. Con una mentalidad emprendedora innata y una pasión ardiente por la educación, Nathaly ha infundido su espíritu en el ADN de ReservaMentor. Su habilidad para ver oportunidades donde otros ven
+                        obstáculos la ha impulsado a desafiar constantemente el statu quo y buscar soluciones innovadoras que transformen la experiencia de aprendizaje.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="integrantes">
-          <div class="integrante">
-            <img
-              class="imgMentor"
-              src="./assets/Andikan.png"
-              alt="AndikanMentor"
-            />
-            <div class="information">
-              <span class="mentorName">Giorgio Mancusi</span>
-              <span class="job">Co-fundador y CEO</span>
-            </div>
-            <p class="descripcion">
-              Giorgio es un visionario cuya pasión por la educación y el
-              emprendimiento lo llevó a co-fundar ReservaMentor. Desde una edad
-              temprana, reconoció las brechas en el acceso a recursos de
-              aprendizaje de calidad y se propuso encontrar una solución. Con
-              una mentalidad disruptiva y un enfoque innovador, Giorgio ha
-              liderado a ReservaMentor para revolucionar la forma en que los
-              estudiantes acceden a la tutoría en línea.
-            </p>
-          </div>
-          <div class="integrante">
-            <img
-              class="imgMentor"
-              src="./assets/Parklins.png"
-              alt="ParklinsMentor"
-            />
-            <div class="information">
-              <span class="mentorName">Mathias Hualtibamba</span>
-              <span class="job">Co-fundador y CEO</span>
-            </div>
-            <p class="descripcion">
-              Mathias es la mente brillante detrás de algunas de las
-              innovaciones más disruptivas de ReservaMentor. Su inagotable
-              curiosidad y pensamiento fuera de la caja lo convierten en un
-              catalizador de ideas revolucionarias que desafían el statu quo de
-              la educación en línea. Mathias tiene la capacidad única de
-              anticipar las tendencias antes de que sucedan. Su visión
-              vanguardista ha impulsado a ReservaMentor a desarrollar
-              características y funcionalidades que han redefinido por completo
-              la experiencia de tutoría virtual.
-            </p>
-          </div>
-          <div class="integrante">
-            <img
-              class="imgMentor"
-              src="./assets/Andikan.png"
-              alt="AndikanMentor"
-            />
-            <div class="information">
-              <span class="mentorName">Ibrahim Arquiñigo</span>
-              <span class="job">Director de UX</span>
-            </div>
-            <p class="descripcion">
-              Ibrahim es un estudiante apasionado por la educación y el
-              emprendimiento. Tras enfrentar desafíos en su propio proceso de
-              aprendizaje, se dio cuenta de la importancia de contar con
-              recursos de tutoría accesibles. Esta experiencia lo inspiró a
-              trabajar en la start up ReservaMentor, con la visión de crear una
-              plataforma que brinde a los estudiantes acceso a mentores
-              excepcionales en línea. Su liderazgo y determinación impulsan al
-              equipo a seguir innovando y mejorando la experiencia de tutoría en
-              línea.
-            </p>
-          </div>
-          <div class="integrante">
-            <img
-              class="imgMentor"
-              src="./assets/Parklins.png"
-              alt="ParklinsMentor"
-            />
-            <div class="information">
-              <span class="mentorName">Fabio Osorio</span>
-              <span class="job">Director de Tech</span>
-            </div>
-            <p class="descripcion">
-              Fabio es el genio tecnológico que impulsa la infraestructura
-              digital de vanguardia que sustenta a ReservaMentor. Con una mente
-              brillante y una pasión inquebrantable por la innovación, él es el
-              arquitecto detrás de las soluciones técnicas disruptivas que están
-              redefiniendo la experiencia de tutoría en línea. Su profundo
-              conocimiento de las últimas tendencias y tecnologías en el espacio
-              edtech, combinado con su enfoque visionario, le permiten anticipar
-              y dar forma al futuro del aprendizaje virtual. Fabio tiene un
-              talento innato para traducir ideas audaces en realidades técnicas
-              deslumbrantes.
-            </p>
-          </div>
-          <div class="integrante">
-            <img
-              class="imgMentor"
-              src="./assets/Andikan.png"
-              alt="AndikanMentor"
-            />
-            <div class="information">
-              <span class="mentorName">Nathaly Anaya</span>
-              <span class="job">CEO - Directora ejecutiva</span>
-            </div>
-            <p class="descripcion">
-              Nathaly es la fuerza motriz detrás del imparable impulso de
-              ReservaMentor hacia la excelencia. Como co-fundadora y directora
-              ejecutiva, su liderazgo visionario e inquebrantable determinación
-              han sido fundamentales para convertir una idea audaz en una
-              empresa líder en el espacio edtech. Con una mentalidad
-              emprendedora innata y una pasión ardiente por la educación,
-              Nathaly ha infundido su espíritu en el ADN de ReservaMentor. Su
-              habilidad para ver oportunidades donde otros ven obstáculos la ha
-              impulsado a desafiar constantemente el statu quo y buscar
-              soluciones innovadoras que transformen la experiencia de
-              aprendizaje.
-            </p>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <section class="topMentores">
-      <div class="mentoresDisplay">
-        <div class="topMentoresText">Top Mentores</div>
-        <div class="mentores">
-          <div class="mentor">
-            <img
-              class="imgMentor"
-              src="./assets/Andikan.png"
-              alt="AndikanMentor"
-            />
-            <div class="information">
-              <span class="mentorName">Andikan Bassey</span>
-              <span class="job">Cloud Engineer</span>
-              <span class="stars">4.8 Estrellas</span>
-              <span class="amounStudents">500 estudiantes apoyados</span>
-              <span class="price">50 soles por hora</span>
+    <section id="topMentores">
+        <div class="mentoresDisplay">
+            <div class="topMentoresText">Top Mentores</div>
+            <div class="mentores">
+                <div class="mentor">
+                    <img class="imgMentor" src="./assets/Andikan.png" alt="AndikanMentor" />
+                    <div class="information">
+                        <span class="mentorName">Andikan Bassey</span>
+                        <span class="job">Cloud Engineer</span>
+                        <span class="stars">4.8 Estrellas</span>
+                        <span class="amounStudents">500 estudiantes apoyados</span>
+                        <span class="price">50 soles por hora</span>
+                    </div>
+                </div>
+                <div class="mentor">
+                    <img class="imgMentor" src="./assets/Parklins.png" alt="ParklinsMentor" />
+                    <div class="information">
+                        <span class="mentorName">Parklins Obi</span>
+                        <span class="job">Ing. Software</span>
+                        <span class="stars">4.9 Estrellas </span>
+                        <span class="amounStudents">300 estudiantes apoyados</span>
+                        <span class="price">40 soles por hora</span>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="mentor">
-            <img
-              class="imgMentor"
-              src="./assets/Parklins.png"
-              alt="ParklinsMentor"
-            />
-            <div class="information">
-              <span class="mentorName">Parklins Obi</span>
-              <span class="job">Ing. Software</span>
-              <span class="stars">4.9 Estrellas </span>
-              <span class="amounStudents">300 estudiantes apoyados</span>
-              <span class="price">40 soles por hora</span>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <section class="Testimonios">
-      <div class="usuariosDisplay">
-        <div class="usuariosText">
-          Testimonios de <span class="reservaMentor">Reserva Mentor</span>
-        </div>
-        <div class="usuarios">
-          <div class="usuario">
-            <img
-              class="imgUsuario"
-              src="./assets/Elizabeth.png"
-              alt="AngelaUsuario"
-            />
-            <div class="informacion">
-              <span class="usuarioName">Angela Lopez Trujillo</span>
-              <p class="descripcion">
-                "ReservaMentor ha sido una herramienta increible para mi. Como
-                estudiante de ingenieria de Software, siempre me resulto dificil
-                encontrar mentores expertos que pudieran guiarme en temas
-                específicos."
-              </p>
+    <section id="Testimonios">
+        <div class="usuariosDisplay">
+            <div class="usuariosText">
+                Testimonios de <span class="reservaMentor">Reserva Mentor</span>
             </div>
-          </div>
-          <div class="usuario">
-            <img
-              class="imgUsuario"
-              src="./assets/Elvis.png"
-              alt="RicardoUsuario"
-            />
-            <div class="informacion">
-              <span class="usuarioName">Ricardo Vergara Perez</span>
-              <p class="descripcion">
-                "Como estudiante de ingeniería de sistemas, siempre me resultó
-                desafiante encontrar apoyo adicional para ciertas áreas
-                complejas, especialmente en temas como algoritmos y estructuras
-                de datos. ReservaMentor cambió por completo mi experiencia de
-                aprendizaje."
-              </p>
+            <div class="usuarios">
+                <div class="usuario">
+                    <img class="imgUsuario" src="./assets/Elizabeth.png" alt="AngelaUsuario" />
+                    <div class="informacion">
+                        <span class="usuarioName">Angela Lopez Trujillo</span>
+                        <p class="descripcion">
+                            "ReservaMentor ha sido una herramienta increible para mi. Como estudiante de ingenieria de Software, siempre me resulto dificil encontrar mentores expertos que pudieran guiarme en temas específicos."
+                        </p>
+                    </div>
+                </div>
+                <div class="usuario">
+                    <img class="imgUsuario" src="./assets/Elvis.png" alt="RicardoUsuario" />
+                    <div class="informacion">
+                        <span class="usuarioName">Ricardo Vergara Perez</span>
+                        <p class="descripcion">
+                            "Como estudiante de ingeniería de sistemas, siempre me resultó desafiante encontrar apoyo adicional para ciertas áreas complejas, especialmente en temas como algoritmos y estructuras de datos. ReservaMentor cambió por completo mi experiencia de aprendizaje."
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <section class="caracteristicas">
-      <span
-        >Caracteristicas de <span class="highlight">ReservaMentor</span></span
-      >
-      <div class="forStudents">
-        <span>Para estudiantes</span>
-        <div class="gridbox">
-          <div>
-            <div>
-              <img class="imgCar" src="./assets/apoyo.png" alt="imagenApoyo" />
+    <section id="caracteristicas">
+        <span>Caracteristicas de <span class="highlight">ReservaMentor</span></span>
+        <div class="forStudents">
+            <span>Para estudiantes</span>
+            <div class="gridbox">
+                <div>
+                    <div>
+                        <img class="imgCar" src="./assets/apoyo.png" alt="imagenApoyo" />
+                    </div>
+                    <div class="frameTexto">
+                        <p>Apoyo personalizado</p>
+                        <p>
+                            Los estudiantes pueden recibir ayuda personalizada y específica en áreas donde están luchando, lo que les permite abordar sus debilidades de manera efectiva.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="frameTexto">
+                        <p>Bajo costo</p>
+                        <p>
+                            ReservaMentor establece tarifas de tutoría que son significativamente más bajas que las tarifas estándar de otros servicios de tutoría. En la cual permite a la mayoria de los estudiantes poder ingresar.
+                        </p>
+                    </div>
+                    <div>
+                        <img class="imgCar" src="./assets/costo.png" alt="imagenApoyo" />
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img class="imgCar" src="./assets/cerebro.png" alt="imagenApoyo" />
+                    </div>
+                    <div class="frameTexto">
+                        <p>Horarios flexibles</p>
+                        <p>
+                            ReservaMentor ofrece horarios flexibles para las sesiones de tutoría, lo que permite a los estudiantes reservar citas que se ajusten a sus horarios académicos y personales.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="frameTexto">
-              <p>Apoyo personalizado</p>
-              <p>
-                Los estudiantes pueden recibir ayuda personalizada y específica
-                en áreas donde están luchando, lo que les permite abordar sus
-                debilidades de manera efectiva.
-              </p>
-            </div>
-          </div>
-          <div>
-            <div class="frameTexto">
-              <p>Bajo costo</p>
-              <p>
-                ReservaMentor establece tarifas de tutoría que son
-                significativamente más bajas que las tarifas estándar de otros
-                servicios de tutoría. En la cual permite a la mayoria de los
-                estudiantes poder ingresar.
-              </p>
-            </div>
-            <div>
-              <img class="imgCar" src="./assets/costo.png" alt="imagenApoyo" />
-            </div>
-          </div>
-          <div>
-            <div>
-              <img
-                class="imgCar"
-                src="./assets/cerebro.png"
-                alt="imagenApoyo"
-              />
-            </div>
-            <div class="frameTexto">
-              <p>Horarios flexibles</p>
-              <p>
-                ReservaMentor ofrece horarios flexibles para las sesiones de
-                tutoría, lo que permite a los estudiantes reservar citas que se
-                ajusten a sus horarios académicos y personales.
-              </p>
-            </div>
-          </div>
         </div>
-      </div>
 
-      <div class="forMentors">
-        <span>Para mentores</span>
-        <div class="gridbox">
-          <div>
-            <div class="frameTexto">
-              <p>Promoción y visibilidad</p>
-              <p>
-                Capacidad de ser destacado en las búsquedas y recomendaciones de
-                la plataforma según las calificaciones y áreas de experiencia.
-              </p>
+        <div class="forMentors">
+            <span>Para mentores</span>
+            <div class="gridbox">
+                <div>
+                    <div class="frameTexto">
+                        <p>Promoción y visibilidad</p>
+                        <p>
+                            Capacidad de ser destacado en las búsquedas y recomendaciones de la plataforma según las calificaciones y áreas de experiencia.
+                        </p>
+                    </div>
+                    <div>
+                        <img class="imgCar" src="./assets/megafono.png" alt="imagenApoyo" />
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img class="imgCar" src="./assets/cuaderno.png" alt="imagenApoyo" />
+                    </div>
+                    <div class="frameTexto">
+                        <p>Perfiles detallados</p>
+                        <p>
+                            Capacidad de crear un perfil completo que destaque sus áreas de experiencia, habilidades, certificaciones y logros. Posibilidad de mostrar calificaciones y reseñas de estudiantes anteriores.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div>
-              <img
-                class="imgCar"
-                src="./assets/megafono.png"
-                alt="imagenApoyo"
-              />
-            </div>
-          </div>
-          <div>
-            <div>
-              <img
-                class="imgCar"
-                src="./assets/cuaderno.png"
-                alt="imagenApoyo"
-              />
-            </div>
-            <div class="frameTexto">
-              <p>Perfiles detallados</p>
-              <p>
-                Capacidad de crear un perfil completo que destaque sus áreas de
-                experiencia, habilidades, certificaciones y logros. Posibilidad
-                de mostrar calificaciones y reseñas de estudiantes anteriores.
-              </p>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <section>
-      <div class="gallery-container">
-        <h1>Galería de imágenes</h1>
-        <div class="gallery-item">
-          <div class="image-list">
-            <img
-              class="imgFirst"
-              src="./assets/placeholder.png"
-              alt="imagenApoyo"
-            />
-            <img
-              class="imgSec"
-              src="./assets/placeholder.png"
-              alt="imagenApoyo"
-            />
-            <img
-              class="imgThird"
-              src="./assets/placeholder.png"
-              alt="imagenApoyo"
-            />
-          </div>
-          <i class="fa-solid fa-angle-left" id="prev"></i>
-          <i class="fa-solid fa-angle-right" id="next"></i>
+        <div class="gallery-container">
+            <h1>Galería de imágenes</h1>
+            <div class="gallery-item">
+                <div class="image-list">
+                    <img class="imgFirst" src="./assets/placeholder.png" alt="imagenApoyo" />
+                    <img class="imgSec" src="./assets/placeholder.png" alt="imagenApoyo" />
+                    <img class="imgThird" src="./assets/placeholder.png" alt="imagenApoyo" />
+                </div>
+                <i class="fa-solid fa-angle-left" id="prev"></i>
+                <i class="fa-solid fa-angle-right" id="next"></i>
+            </div>
         </div>
-      </div>
+    </section> -->
+
+    <section class="list-container">
+        <div>
+            <h1>Preguntas Frecuentes (FAQ)</h1>
+            <div>
+                <h2>¿Qué es ReservaMentor?</h2>
+                <p>
+                    ReservaMentor es una plataforma en línea que conecta a estudiantes con tutores o mentores calificados para recibir ayuda personalizada en diversas áreas académicas. Nuestro objetivo es brindar acceso a tutorías de alta calidad de manera flexible y conveniente.
+                </p>
+            </div>
+            <div>
+                <h2>¿Cómo funciona?</h2>
+                <p>
+                    Es muy sencillo. Simplemente ingresa a nuestra plataforma, selecciona la materia o tema en el que necesitas ayuda, elige un tutor disponible y reserva una sesión en el horario que mejor se adapte a tus necesidades. Las tutorías se llevan a cabo en tiempo
+                    real a través de videoconferencia.
+                </p>
+            </div>
+            <div>
+                <h2>¿Qué áreas académicas cubren?</h2>
+                <p>
+                    Nuestros tutores están capacitados para brindar apoyo en una amplia gama de materias, incluyendo idiomas, programación y programación competitiva. Puedes filtrar por materia específica al buscar un tutor.
+                </p>
+            </div>
+            <div>
+                <h2>¿Cuáles son los horarios de tutoría disponibles?</h2>
+                <p>
+                    El horario dependerá de los tutores, aunque pueden preguntar por chat a los tutores respectivos si pueden abrir más horarios.
+                </p>
+            </div>
+            <div>
+                <h2>¿Cuál es el costo de las tutorías?</h2>
+                <p>
+                    Nuestras tarifas son accesibles y competitivas. El costo varía según la materia y la experiencia del tutor, pero en general entre 20 a 50 soles por hora. Puedes ver los precios detallados al buscar tutores disponibles. También ofrecemos paquetes de sesiones
+                    con descuentos.
+                </p>
+            </div>
+            <div>
+                <h2>¿Cómo pago por las tutorías?</h2>
+                <p>
+                    Aceptamos los principales métodos de pago como tarjetas de crédito y otros métodos de pago en línea seguros a través de Stripe.
+                </p>
+            </div>
+            <div>
+                <h2>¿Puedo cancelar o reprogramar una sesión?</h2>
+                <p>
+                    Sí, ofrecemos flexibilidad para cancelar o reprogramar sesiones con un aviso razonable. Consulta nuestra política de cancelación para conocer los detalles.
+                </p>
+            </div>
+        </div>
     </section>
 
     <section class="list-container">
-      <div>
-        <h1>Preguntas Frecuentes (FAQ)</h1>
         <div>
-          <h2>¿Qué es ReservaMentor?</h2>
-          <p>
-            ReservaMentor es una plataforma en línea que conecta a estudiantes
-            con tutores o mentores calificados para recibir ayuda personalizada
-            en diversas áreas académicas. Nuestro objetivo es brindar acceso a
-            tutorías de alta calidad de manera flexible y conveniente.
-          </p>
+            <h1>Casos de Éxito</h1>
+            <div>
+                <h2>Impulsando el rendimiento académico a nuevas alturas</h2>
+                <p>
+                    Nuestro enfoque innovador de tutoría en línea ha demostrado ser extremadamente efectivo para elevar el rendimiento académico de los estudiantes. En el último año, hemos ayudado a más de 5,000 estudiantes a mejorar sus calificaciones en un promedio de
+                    2 letras de grado. Nuestros datos muestran que el 85% de los estudiantes que toman 10 o más sesiones de tutoría logran un incremento significativo en sus notas.
+                </p>
+            </div>
+            <div>
+                <h2>Abriendo puertas a oportunidades universitarias</h2>
+                <p>
+                    Uno de nuestros mayores orgullos es apoyar a los estudiantes en su camino hacia la educación superior. El año pasado, el 92% de los usuarios de nuestra plataforma que aplicaron a universidades fueron aceptados en una de sus opciones principales. Nuestros
+                    tutores expertos los prepararon a fondo en áreas clave como admisiones, redacción de ensayos, entrevistas y más, dándoles la ventaja competitiva necesaria.
+                </p>
+            </div>
+            <div>
+                <h2>Fomentando el dominio de idiomas para un mundo globalizado</h2>
+                <p>
+                    En un mundo cada vez más interconectado, el dominio de idiomas es una habilidad invaluable. Nuestra plataforma ha ayudado a cientos de estudiantes a alcanzar fluidez en nuevos idiomas de manera efectiva y asequible. El 78% de los usuarios que tomaron
+                    tutorías de idiomas intensivas lograron un nivel avanzado en menos de 6 meses, abriendo puertas a oportunidades académicas, profesionales y culturales.
+                </p>
+            </div>
+            <div class="list-item">
+                <h2>Preparando a la próxima generación de líderes en tecnología</h2>
+                <p>
+                    Estamos formando a la fuerza laboral tecnológica del futuro. En los últimos 2 años, más de 3,000 estudiantes han utilizado nuestra plataforma para aprender habilidades de programación, análisis de datos y otras disciplinas STEM de vanguardia. Muchos de
+                    ellos han ganado reconocidos concursos y campamentos de codificación, demostrando su dominio excepcional.
+                </p>
+            </div>
         </div>
-        <div>
-          <h2>¿Cómo funciona?</h2>
-          <p>
-            Es muy sencillo. Simplemente ingresa a nuestra plataforma,
-            selecciona la materia o tema en el que necesitas ayuda, elige un
-            tutor disponible y reserva una sesión en el horario que mejor se
-            adapte a tus necesidades. Las tutorías se llevan a cabo en tiempo
-            real a través de videoconferencia.
-          </p>
-        </div>
-        <div>
-          <h2>¿Qué áreas académicas cubren?</h2>
-          <p>
-            Nuestros tutores están capacitados para brindar apoyo en una amplia
-            gama de materias, incluyendo idiomas, programación y programación
-            competitiva. Puedes filtrar por materia específica al buscar un
-            tutor.
-          </p>
-        </div>
-        <div>
-          <h2>¿Cuáles son los horarios de tutoría disponibles?</h2>
-          <p>
-            El horario dependerá de los tutores, aunque pueden preguntar por
-            chat a los tutores respectivos si pueden abrir más horarios.
-          </p>
-        </div>
-        <div>
-          <h2>¿Cuál es el costo de las tutorías?</h2>
-          <p>
-            Nuestras tarifas son accesibles y competitivas. El costo varía según
-            la materia y la experiencia del tutor, pero en general entre 20 a 50
-            soles por hora. Puedes ver los precios detallados al buscar tutores
-            disponibles. También ofrecemos paquetes de sesiones con descuentos.
-          </p>
-        </div>
-        <div>
-          <h2>¿Cómo pago por las tutorías?</h2>
-          <p>
-            Aceptamos los principales métodos de pago como tarjetas de crédito y
-            otros métodos de pago en línea seguros a través de Stripe.
-          </p>
-        </div>
-        <div>
-          <h2>¿Puedo cancelar o reprogramar una sesión?</h2>
-          <p>
-            Sí, ofrecemos flexibilidad para cancelar o reprogramar sesiones con
-            un aviso razonable. Consulta nuestra política de cancelación para
-            conocer los detalles.
-          </p>
-        </div>
-      </div>
     </section>
-
-    <section class="list-container">
-      <div>
-        <h1>Casos de Éxito</h1>
-        <div>
-          <h2>Impulsando el rendimiento académico a nuevas alturas</h2>
-          <p>
-            Nuestro enfoque innovador de tutoría en línea ha demostrado ser
-            extremadamente efectivo para elevar el rendimiento académico de los
-            estudiantes. En el último año, hemos ayudado a más de 5,000
-            estudiantes a mejorar sus calificaciones en un promedio de 2 letras
-            de grado. Nuestros datos muestran que el 85% de los estudiantes que
-            toman 10 o más sesiones de tutoría logran un incremento
-            significativo en sus notas.
-          </p>
-        </div>
-        <div>
-          <h2>Abriendo puertas a oportunidades universitarias</h2>
-          <p>
-            Uno de nuestros mayores orgullos es apoyar a los estudiantes en su
-            camino hacia la educación superior. El año pasado, el 92% de los
-            usuarios de nuestra plataforma que aplicaron a universidades fueron
-            aceptados en una de sus opciones principales. Nuestros tutores
-            expertos los prepararon a fondo en áreas clave como admisiones,
-            redacción de ensayos, entrevistas y más, dándoles la ventaja
-            competitiva necesaria.
-          </p>
-        </div>
-        <div>
-          <h2>Fomentando el dominio de idiomas para un mundo globalizado</h2>
-          <p>
-            En un mundo cada vez más interconectado, el dominio de idiomas es
-            una habilidad invaluable. Nuestra plataforma ha ayudado a cientos de
-            estudiantes a alcanzar fluidez en nuevos idiomas de manera efectiva
-            y asequible. El 78% de los usuarios que tomaron tutorías de idiomas
-            intensivas lograron un nivel avanzado en menos de 6 meses, abriendo
-            puertas a oportunidades académicas, profesionales y culturales.
-          </p>
-        </div>
-        <div class="list-item">
-          <h2>Preparando a la próxima generación de líderes en tecnología</h2>
-          <p>
-            Estamos formando a la fuerza laboral tecnológica del futuro. En los
-            últimos 2 años, más de 3,000 estudiantes han utilizado nuestra
-            plataforma para aprender habilidades de programación, análisis de
-            datos y otras disciplinas STEM de vanguardia. Muchos de ellos han
-            ganado reconocidos concursos y campamentos de codificación,
-            demostrando su dominio excepcional.
-          </p>
-        </div>
-      </div>
-    </section>
-
+    <!-- 
     <section class="form-container">
-      <div class="box-container">
-        <h1>Contacto</h1>
-        <form>
-          <div class="form-item">
-            <input type="name" placeholder="Nombre" required />
-          </div>
-          <div class="form-item">
-            <input type="email" placeholder="Correo" required />
-          </div>
-          <div class="form-item">
-            <textarea id="message" rows="6" placeholder="Mensaje"></textarea>
-          </div>
-          <button class="send-button">Enviar</button>
-        </form>
-        <div class="form-text">
-          <p>¿Tienes preguntas o</p>
-          <p>necesitas ayuda?</p>
-          <p>Comparte tus ideas y</p>
-          <p>contacta con nosotros</p>
+        <div class="box-container">
+            <h1>Contacto</h1>
+            <form>
+                <div class="form-item">
+                    <input type="name" placeholder="Nombre" required />
+                </div>
+                <div class="form-item">
+                    <input type="email" placeholder="Correo" required />
+                </div>
+                <div class="form-item">
+                    <textarea id="message" rows="6" placeholder="Mensaje"></textarea>
+                </div>
+                <button class="send-button">Enviar</button>
+            </form>
+            <div class="form-text">
+                <p>¿Tienes preguntas o</p>
+                <p>necesitas ayuda?</p>
+                <p>Comparte tus ideas y</p>
+                <p>contacta con nosotros</p>
+            </div>
         </div>
-      </div>
-    </section>
-  </body>
+    </section> -->
+</body>
 
-  <footer>
+<footer>
     <div class="reserva-mentor-container">
-      <h1 class="reserva-mentor-title">ReservaMentor</h1>
-      <div class="reserva-mentor-links">
-        <h2 class="reserva-mentor-subtitle">Plataforma</h2>
-        <ul class="reserva-mentor-list">
-          <li>Top Mentores</li>
-          <li>Características</li>
-          <li>Testimonios</li>
-        </ul>
-        <div class="reserva-mentor-socials">
-          <div class="social-icons">
-            <a href="#"><img src="/assets/youtube.png" alt="YouTube" /></a>
-            <a href="#"><img src="/assets/facebook.png" alt="Facebook" /></a>
-            <a href="#"><img src="/assets/instagram.png" alt="Instagram" /></a>
-            <a href="#"><img src="/assets/x.png" alt="X" /></a>
-          </div>
+        <h1 class="reserva-mentor-title">ReservaMentor</h1>
+        <div class="reserva-mentor-links">
+            <h2 class="reserva-mentor-subtitle">Plataforma</h2>
+            <ul class="reserva-mentor-list">
+                <li>Acerca de</li>
+                <li>Características</li>
+                <li>Top Mentores</li>
+                <li>Testimonios</li>
+            </ul>
+            <div class="reserva-mentor-socials">
+                <div class="social-icons">
+                    <a href="#"><img src="./assets/youtube.png" alt="YouTube" /></a>
+                    <a href="#"><img src="./assets/facebook.png" alt="Facebook" /></a>
+                    <a href="#"><img src="./assets/instagram.png" alt="Instagram" /></a>
+                    <a href="#"><img src="./assets/x.png" alt="X" /></a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </footer>
+</footer>
+
 </html>
