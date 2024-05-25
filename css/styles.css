@@ -197,6 +197,75 @@ section {
     color: #487c00;
 }
 
+/*TESTIMONIOS*/
+
+.usuariosDisplay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .usuariosText {
+    font-size: 45px;
+    margin-bottom: 80px;
+  }
+
+  .reservaMentor {
+    font-size: 45px;
+    margin-bottom: 80px;
+    color: #487c00;
+  }
+  
+  .Testimonios {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 169px 0px;
+  }
+  
+  .usuarios {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .usuario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-right: 300px;
+    margin-bottom: 150px;
+  }
+
+  .imgUsuario {
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+}
+
+.usuarioName {
+    font-size: 35px;
+}
+.descripcion {
+    font-size: 20px;
+}
+
+.informacion {
+    border: 1px solid #487c00;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 350px;
+    border-radius: 5%;
+}
+
 /*CARACTERISTICAS*/
 
 .caracteristicas {
