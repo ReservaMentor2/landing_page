@@ -1,33 +1,56 @@
+/* Native HTML/CSS elements*/
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0px;
     font-weight: 700;
     font-family: "Playfair Display", serif;
 }
 
+#acercaDe {
+    margin-top: 100%;
+    padding-bottom: 25%;
+}
+
 header {
-    font-family: "Playfair Display", serif;
     display: flex;
     height: 100px;
     width: 100%;
     background-color: white;
     justify-content: space-around;
     align-items: center;
-    font-weight: 700;
     font-size: 24px;
+    margin:auto 50px;
 }
 
 button {
-    font-family: "Playfair Display", serif;
     font-size: 24px;
-    font-weight: 700;
+}
+
+section {
+    display: flex;
+}
+
+/*GLOBAL STYLES*/
+
+.marcaHighlight {
+    color: #487c00;
+}
+
+/*SECTIONS*/
+
+
+/* HEADER */
+
+.linksHeader ul li {
+    display: inline-block;
+    margin-right: 20px;
 }
 
 .ingresoUsuario ul li {
     display: inline-block;
-}
-
-.highlight {
-    color: #487c00;
 }
 
 .ingresoUsuario button {
@@ -41,14 +64,10 @@ button {
     color: white;
 }
 
-.linksHeader ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
+/*Introduccion*/
 
-.intro {
+.introduccion {
     box-sizing: border-box;
-    display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 169px;
@@ -56,7 +75,7 @@ button {
     height: 743px;
 }
 
-.introDetails {
+.introduccionDetails {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,6 +113,8 @@ button {
     width: 23%;
     font-size: 24px;
     background-color: white;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
 }
 
 .searchBar .search {
@@ -101,15 +122,54 @@ button {
     color: white;
 }
 
-.topMentores {
-    display: block;
-    width: 100%;
-    display: flex;
+/*ACERCA DE*/
+
+.acercaDe {
+    margin-top: 170px;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 169px 0px;
+    width: 100%;
 }
+
+.acercaDeBox {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.nosotros p {
+    margin: 70px 0px;
+    font-size: 20px;
+}
+
+.nosotros span:first-child {
+    font-size: 45px;
+}
+
+.integrantes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.integrante {
+    width: 40%;
+}
+
+.imgMentor {
+    width: 400px;
+    height: 360px;
+}
+
+.information span {
+    display: block;
+    font-size: 40px;
+}
+
+.descripcion {
+    font-size: 24px;
+}
+
+/*TOP MENTORES*/
 
 .mentoresDisplay {
     display: flex;
@@ -123,6 +183,14 @@ button {
     margin-bottom: 80px;
 }
 
+.topMentores {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 169px 0px;
+}
+
 .mentores {
     display: flex;
     justify-content: space-around;
@@ -133,22 +201,13 @@ button {
     flex-direction: column;
 }
 
-.imgMentor {
-    width: 400px;
-    height: 360px;
-}
-
-.information span {
-    display: block;
-    font-size: 40px;
-}
-
 .job {
     color: #487c00;
 }
 
+/*CARACTERISTICAS*/
+
 .caracteristicas {
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -223,42 +282,6 @@ button {
     height: 15%;
 }
 
-.acercaDe {
-  margin-top: 170px;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.acercaDeBox {
-  display: flex;
-  flex-direction: column;
-  width: 65%;
-}
-
-.integrantes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.integrante {
-  width: 40%;
-}
-
-.nosotros p {
-  margin: 70px 0px;
-  font-size: 20px;
-}
-
-.nosotros span:first-child {
-  font-size: 45px;
-}
-
-.descripcion{
-  font-size: 24px;
-}
-
 .forMentors {
   display: flex;
   flex-direction: column;
@@ -276,35 +299,7 @@ button {
   background-color: #fff;
 }
 
-.faq-container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 54, 13, 0.1);
-    border-radius: 8px;
-}
-
-.faq-container h1 {
-    text-align: center;
-    color: #333;
-}
-
-.faq-item {
-    margin-bottom: 20px;
-}
-
-.faq-item h2 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    color: green;
-}
-
-.faq-item p {
-    font-size: 1em;
-    line-height: 1.5;
-    margin: 0;
-}
+/*IMAGE GALLERY*/
 
 .gallery-container h1 {
     text-align: center;
@@ -330,15 +325,15 @@ button {
     justify-content: center;
     align-items: center;
     align-self: center;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .gallery-container .gallery-item .image-list .imgFirst {
     width: 500px;
     height: auto;
-    opacity: 0.5; 
-    left: 380px; 
-    transform: translateX(-35%); 
+    opacity: 0.5;
+    left: 380px;
+    transform: translateX(-35%);
 }
 
 .gallery-container .gallery-item .image-list .imgSec {
@@ -349,26 +344,35 @@ button {
 .gallery-container .gallery-item .image-list .imgThird {
     width: 500px;
     height: auto;
-    opacity: 0.5; 
-    right:380px; 
-    transform: translateX(35%); 
+    opacity: 0.5;
+    right: 380px;
+    transform: translateX(35%);
 }
 
 .gallery-container .gallery-item {
-    position: relative; 
+    position: relative;
+}
+
+.gallery-container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px auto;
 }
 
 #prev {
-    left: 420px; 
+    left: 420px;
     top: 245px;
 }
 
 #next {
-    right: 420px; 
+    right: 420px;
     bottom: 245px;
 }
 
-.success-container {
+/*FAQ Y SUCCESS*/
+
+.list-container {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
@@ -377,26 +381,28 @@ button {
     border-radius: 8px;
 }
 
-.success-container h1 {
+.list-item {
+    margin-bottom: 20px;
+}
+
+.list-container div h1 {
     text-align: center;
     color: #333;
 }
 
-.success-item {
-    margin-bottom: 20px;
-}
-
-.success-item h2 {
+.list-container div div h2 {
     font-size: 1.2em;
     margin-bottom: 10px;
     color: green;
 }
 
-.success-item p {
+.list-container div div p {
     font-size: 1em;
     line-height: 1.5;
     margin: 0;
 }
+
+/*CONTACTO*/
 
 .form-container {
     margin-left: 500px;
@@ -476,6 +482,8 @@ button {
 .form-container button:hover {
     background-color: #00540D;
 }
+
+/* FOOTER */
 
 .reserva-mentor-container {
     margin: 0;
