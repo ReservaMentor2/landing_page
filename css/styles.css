@@ -757,83 +757,72 @@ ALL NAVBAR
 
 /*CONTACTO*/
 
-.form-container {
-  margin-left: 500px;
-  margin-top: 170px;
+#form-container {
+  padding: 30px 30px;
+  justify-content: right;
+  margin-bottom: 10px;
 }
-
-.form-container h1 {
-  margin-left: 185px;
-}
-
-.form-container form {
+.contact-content {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-container h1 {
+  max-width: 40%;
+  text-align: center;
+}
+.contact-form {
+  width: 50%;
+  padding-right: 45px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
   border: 3px solid #00540d;
   border-radius: 25px;
   padding: 20px;
-  max-width: 450px;
-  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  text-align: center;
 }
 
-.form-container .form-text {
-  position: relative;
-  margin-left: 600px;
-  bottom: 360px;
-  font-size: 30px;
-  line-height: 10px;
-}
-
-.form-container .form-item {
-  margin: 7px;
-}
-
-.form-container input,
-.form-container textarea {
-  width: 200%;
-  padding: 20px;
-  padding-top: 25px;
-  border: 1px solid #00540d;
-  border-radius: 10px;
-  text-align: left;
-  font-size: 20px;
-  font-family: "Playfair Display", serif;
-}
-
-.form-container input {
-  width: 135%;
-}
-
-.form-container textarea {
-  width: 137%;
-}
-
-.form-container input::placeholder,
-.form-container textarea::placeholder {
-  font-size: 20px;
-  font-family: "Playfair Display", serif;
+.form-text p {
   display: flex;
-  font-weight: 700;
-  color: #b3b1b1;
+  text-align: left;
+  width: 45%;
+  color: #333;
+  font-size: 25px;
+  padding-left: 30px;
+  margin-left: 20%;
+  font-weight: 100;
 }
 
-.form-container button {
+.form-item {
+  margin-bottom: 10px;
+}
+
+.form-item input,
+.form-item textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #00540d;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+.contact-form button {
+  padding: 5px 20px;
   cursor: pointer;
   background-color: #487c00;
   color: #ffffff;
-  padding: 9px 20px;
-  font-weight: 700;
-  font-size: 15px;
   border: none;
+  font-size: 20px;
   border-radius: 10px;
   transition: background-color 0.3s;
-  margin-left: 329px;
+  display: grid;
+  justify-content: right;
+  float: right;
 }
 
-.form-container button:hover {
+.contact-form button:hover {
   background-color: #00540d;
 }
 
