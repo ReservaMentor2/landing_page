@@ -431,6 +431,7 @@ ALL NAVBAR
   margin-top: 170px;
   justify-content: center;
   width: 100%;
+  font-family: "Playfair Display", serif;
 }
 
 .acercaDeBox {
@@ -480,6 +481,71 @@ ALL NAVBAR
 
 .descripcion {
   font-size: 24px;
+}
+
+/*celular*/
+@media (max-width: 550px) {
+  .acercaDeBox {
+    margin: 0px 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .integrantes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .integrante {
+    width: 100%;
+    align-items: center;
+  }
+
+  .imgMentor {
+    height: 130px;
+  }
+  .information span {
+    font-size: 20px;
+  }
+  .integrante p {
+    font-size: 12px;
+  }
+}
+
+/*tablet*/
+
+@media (max-width: 1200px) and (min-width: 550px) {
+  .acercaDeBox {
+    margin: 0px 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .integrantes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .integrante {
+    width: 100%;
+    align-items: center;
+  }
+
+  .imgMentor {
+    height: 150px;
+  }
+  .information span {
+    font-size: 30px;
+  }
+  .integrante p {
+    font-size: 22px;
+  }
 }
 
 /*TOP MENTORES*/
