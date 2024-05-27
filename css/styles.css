@@ -20,6 +20,7 @@ button {
 
 section {
   display: flex;
+  font-family: "Playfair Display", serif;
 }
 
 /*GLOBAL STYLES*/
@@ -425,6 +426,28 @@ ALL NAVBAR
   color: white;
 }
 
+@media (max-width: 660px) {
+  .searchBar {
+    flex-direction: column;
+    height: 400px;
+  }
+
+  .searchBar button {
+    width:90%;
+    font-size: 15px;
+    height: 20%;
+  }
+
+  .mensajeGrande {
+    font-size: 30px;
+  }
+
+  .mensajeChico {
+    font-size: 15px;
+  }
+
+}
+
 /*ACERCA DE*/
 
 #acercaDe {
@@ -584,6 +607,12 @@ ALL NAVBAR
   color: #487c00;
 }
 
+@media (max-width: 660px) {
+  .mentores {
+    flex-direction: column;
+  }
+}
+
 /*TESTIMONIOS*/
 
 .usuariosDisplay {
@@ -690,6 +719,10 @@ ALL NAVBAR
   flex-direction: column;
 }
 
+#caracteristicas span:first-child {
+  font-size: 45px;
+}
+
 .gridbox > div:nth-child(n) {
   display: flex;
   justify-content: space-around;
@@ -730,6 +763,16 @@ ALL NAVBAR
   height: 360px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+}
+
+@media (max-width: 660px) {
+  .gridbox > div:nth-child(n) {
+    flex-direction: column;
+  }
+
+  .frameTexto {
+    height: auto;
+  }
 }
 
 /*IMAGE GALLERY*/
@@ -1123,6 +1166,12 @@ ALL NAVBAR
 
 .contact-form button:hover {
   background-color: #00540d;
+}
+
+@media (max-width: 660px) {
+  .contact-content {
+    flex-direction: column;
+  }
 }
 
 /* FOOTER */
