@@ -914,12 +914,32 @@ ALL NAVBAR
 .Video {
   max-width: 600px; 
   margin: 0 auto;
+  text-align: center;
 }
 
 .Video h1 {
   font-size: 36px; 
-  text-align: center; 
   margin-bottom: 30px; 
+}
+
+
+@media only screen and (max-width: 600px) {
+  .Video {
+    max-width: 100%; 
+    padding: 0 20px;
+  }
+
+
+  .Video h1 {
+    font-size: 24px; 
+    margin-bottom: 20px;
+  }
+
+
+  .videoFrame {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /*IMAGE GALLERY*/
