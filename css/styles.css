@@ -697,6 +697,82 @@ ALL NAVBAR
   border-radius: 5%;
 }
 
+@media (max-width: 1200px) {
+  .usuario {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .usuario {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .informacion {
+    width: 80%;
+  }
+
+  .imgUsuario {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .usuariosText, .reservaMentor {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .usuarioName {
+    font-size: 30px;
+  }
+
+  .descripcion {
+    font-size: 18px;
+  }
+
+  .imgUsuario {
+    width: 200px;
+    height: 200px;
+  }
+
+  .informacion {
+    width: 70%;
+  }
+}
+
+@media (max-width: 576px) {
+  .usuariosText, .reservaMentor {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .usuario {
+    margin-bottom: 20px;
+    padding: 10px; 
+  }
+
+  .imgUsuario {
+    width: 200px;
+    height: 200px;
+  }
+
+  .usuarioName {
+    font-size: 18px;
+  }
+
+  .descripcion {
+    font-size: 12px;
+  }
+
+  .informacion {
+    width: 80%;
+  }
+}
+
 /*CARACTERISTICAS*/
 
 #caracteristicas {
