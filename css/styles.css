@@ -1172,6 +1172,15 @@ ALL NAVBAR
   .contact-content {
     flex-direction: column;
   }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .form-text {
+    width: 100%;
+  }
+  
 }
 
 /* FOOTER */
