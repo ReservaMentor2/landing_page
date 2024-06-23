@@ -406,7 +406,7 @@ ALL NAVBAR
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  background-color: #aac38b;
+  background-color: #e48a36;
   border-radius: 50px;
 }
 
@@ -422,7 +422,7 @@ ALL NAVBAR
 }
 
 .searchBar .search {
-  background-color: #487c00;
+  background-color: #197ead;
   color: white;
 }
 
@@ -433,7 +433,7 @@ ALL NAVBAR
   }
 
   .searchBar button {
-    width:90%;
+    width: 90%;
     font-size: 15px;
     height: 20%;
   }
@@ -445,7 +445,6 @@ ALL NAVBAR
   .mensajeChico {
     font-size: 15px;
   }
-
 }
 
 /*ACERCA DE*/
@@ -609,7 +608,12 @@ ALL NAVBAR
 }
 
 .job {
-  color: #487c00;
+  color: #197ead;
+}
+
+.mentores .imgMentor {
+  border: 2px solid #e48a36;
+  border-radius: 10%;
 }
 
 /* Media queries para diferentes tamaños de pantalla */
@@ -618,7 +622,7 @@ ALL NAVBAR
     font-size: 40px;
     margin-bottom: 60px;
   }
-  
+
   .mentor {
     flex: 1 1 250px;
   }
@@ -629,7 +633,7 @@ ALL NAVBAR
     font-size: 35px;
     margin-bottom: 50px;
   }
-  
+
   .mentores {
     justify-content: center;
   }
@@ -644,7 +648,7 @@ ALL NAVBAR
     font-size: 30px;
     margin-bottom: 40px;
   }
-  
+
   #topMentores {
     margin: 100px 0px;
   }
@@ -659,7 +663,7 @@ ALL NAVBAR
     font-size: 25px;
     margin-bottom: 30px;
   }
-  
+
   .mentores {
     flex-direction: column;
     align-items: center;
@@ -731,6 +735,7 @@ ALL NAVBAR
   height: 400px;
   border-radius: 100%;
   object-fit: cover;
+  border: 2px solid #e48a36;
 }
 
 .usuarioName {
@@ -744,7 +749,7 @@ ALL NAVBAR
 }
 
 .informacion {
-  border: 1px solid #487c00;
+  border: 2px solid #197ead;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -753,6 +758,7 @@ ALL NAVBAR
   width: 400px;
   height: 400px;
   border-radius: 5%;
+  background-color: #f0f5f8;
 }
 
 @media (max-width: 1200px) {
@@ -779,7 +785,8 @@ ALL NAVBAR
 }
 
 @media (max-width: 768px) {
-  .usuariosText, .reservaMentor {
+  .usuariosText,
+  .reservaMentor {
     font-size: 40px;
     margin-bottom: 20px;
   }
@@ -803,14 +810,15 @@ ALL NAVBAR
 }
 
 @media (max-width: 576px) {
-  .usuariosText, .reservaMentor {
+  .usuariosText,
+  .reservaMentor {
     font-size: 25px;
     margin-bottom: 20px;
   }
 
   .usuario {
     margin-bottom: 20px;
-    padding: 10px; 
+    padding: 10px;
   }
 
   .imgUsuario {
@@ -896,7 +904,7 @@ ALL NAVBAR
   width: 360px;
   height: 360px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: #eef5ef;
 }
 
 @media (max-width: 660px) {
@@ -912,34 +920,69 @@ ALL NAVBAR
 /*VIDEO*/
 
 .Video {
-  max-width: 600px; 
+  max-width: 600px;
   margin: 0 auto;
   text-align: center;
 }
 
 .Video h1 {
-  font-size: 36px; 
-  margin-bottom: 30px; 
+  margin-top: 150px;
+  font-size: 36px;
+  margin-bottom: 30px;
 }
-
 
 @media only screen and (max-width: 600px) {
   .Video {
-    max-width: 100%; 
+    max-width: 100%;
     padding: 0 20px;
   }
 
-
   .Video h1 {
-    font-size: 24px; 
+    font-size: 24px;
     margin-bottom: 20px;
   }
-
 
   .videoFrame {
     width: 100%;
     height: auto;
   }
+}
+
+.price-list {
+  max-width: fit-content;
+  margin: 200px auto 50px auto;
+  padding: 20px;
+  background-color: #f0f5f8;
+  box-shadow: 0 0 10px rgba(0, 54, 13, 0.1);
+  border-radius: 8px;
+}
+
+.price-list div h1 {
+  text-align: center;
+  color: #333;
+}
+
+.price-list div div h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #197ead;
+}
+
+.price-list div div p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.tipo-sesion {
+  display: flex;
+  justify-content: space-between;
+}
+.grupal,
+.individual {
+  padding: 10px;
+  width: 45%;
+  box-sizing: border-box;
 }
 
 /*IMAGE GALLERY*/
@@ -1023,7 +1066,7 @@ ALL NAVBAR
 }
 
 .cta-background {
-  background-color: #00540d;
+  background-color: #e48a36;
   padding: 40px 140px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -1239,7 +1282,7 @@ ALL NAVBAR
   max-width: 800px;
   margin: 50px auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: #f0f5f8;
   box-shadow: 0 0 10px rgba(0, 54, 13, 0.1);
   border-radius: 8px;
 }
@@ -1256,7 +1299,7 @@ ALL NAVBAR
 .list-container div div h2 {
   font-size: 1.2em;
   margin-bottom: 10px;
-  color: green;
+  color: #197ead;
 }
 
 .list-container div div p {
@@ -1291,7 +1334,7 @@ ALL NAVBAR
   width: 45%;
   padding: 35px 35px;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
-  border: 3px solid #00540d;
+  border: 3px solid #e48a36;
   border-radius: 25px;
 }
 
@@ -1311,7 +1354,7 @@ ALL NAVBAR
 .form-item textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #00540d;
+  border: 1px solid #e48a36;
   border-radius: 5px;
 }
 
@@ -1347,7 +1390,6 @@ ALL NAVBAR
   .form-text {
     width: 100%;
   }
-  
 }
 
 /* FOOTER */
